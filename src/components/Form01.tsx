@@ -1,4 +1,4 @@
-import { ButtonBack } from "../../shared/ButtonBack";
+import { ButtonBack } from "../shared/ButtonBack";
 import { useForm } from 'react-hook-form';
 import { DevTool } from '@hookform/devtools';
 

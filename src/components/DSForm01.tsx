@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { ButtonBack } from "../shared/ButtonBack";
 
-interface FormI {
+interface FormProps {
   nombre: string;
   email: string;
   edad: number;
@@ -14,9 +14,9 @@ export const DSForm01 = () => {
     handleSubmit,
     formState: { errors },
 		reset
-  } = useForm<FormI>();
+  } = useForm<FormProps>();
 
-  const onSubmit = (data: FormI) => {
+  const onSubmit = (data: FormProps) => {
     console.log('Form Data',data); // { email: '...', password: '...' }
 		reset(); // <- Limpia todos los campos después del envío exitoso
   };
